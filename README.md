@@ -101,8 +101,52 @@ This project demonstrates how Microsoft Fabric can be used to build scalable ana
 
 ## 📷 Dashboard Preview
 
-_Add screenshots of your dashboards here._
+## 1️⃣ Solution Architecture
+This project follows the Microsoft Fabric Lakehouse architecture, moving data through Bronze, Silver, and Gold layers before serving analytics in Power BI.
 
+![Architecture](images/image%201.jpeg)
+
+---
+
+## 2️⃣ End-to-End Data Pipeline
+The master pipeline orchestrates data ingestion, transformation, and visualization using Microsoft Fabric.
+
+![Master Pipeline](images/image%202.jpeg)
+
+---
+
+## 3️⃣ Pipeline Orchestration
+The orchestration pipeline invokes Bronze ingestion, Silver transformations, and Gold layer notebooks to automate the end-to-end workflow.
+
+![Pipeline Orchestration](images/image%203.jpeg)
+
+---
+
+## 4️⃣ Bronze Layer Data Ingestion
+Raw structured and unstructured datasets are ingested into the Bronze layer using metadata-driven Fabric pipelines.
+
+![Bronze Layer](images/image%204.jpeg)
+
+---
+
+## 5️⃣ Gold Layer Transformations
+PySpark notebooks aggregate and transform Silver data into analytics-ready Gold datasets.
+
+![Gold Layer Notebook](images/image%205.jpeg)
+
+---
+
+## 6️⃣ Lakehouse Storage
+Data is organized using the Medallion Architecture within OneLake, separating Bronze, Silver, and Gold datasets.
+
+![Lakehouse](images/image%206.jpeg)
+
+---
+
+## 7️⃣ Power BI Dashboard
+The final semantic model is visualized using an interactive Power BI dashboard featuring KPIs, sales trends, customer insights, product analysis, sentiment analysis, and web engagement metrics.
+
+![Power BI Dashboard](images/image%207.jpeg)
 ---
 
 ## 👩‍💻 Author
